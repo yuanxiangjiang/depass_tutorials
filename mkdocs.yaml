@@ -1,6 +1,7 @@
 site_name: DePass Documentation
 
 nav:
+  - Home: index.md
   - Tutorials:
     - "Tutorial 1: Spatial CITE-seq (Human tonsil)": Tutorials/Tutorial1.md
     - "Tutorial 2: SPOTS (Mouse spleen)": Tutorials/Tutorial2.md

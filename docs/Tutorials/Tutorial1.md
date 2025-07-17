@@ -52,7 +52,7 @@ data = {'rna': adata_omics1, 'protein': adata_omics2}
 
 ```
 
-## Training the model
+### Training the model
 
 The DePass model is designed for multi-omics data integration at both spatial and single-cell data. After training, the output file includes the following key results:
 
