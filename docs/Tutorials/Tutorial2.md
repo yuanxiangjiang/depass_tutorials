@@ -171,7 +171,6 @@ plot_spatial(
 ![png](Tutorial2_files/Tutorial2_15_0.png)
     
 
-
 ### Data enhancement analysis: marker LogFC and expression pattern
 
 Perform differential expression analysis using **scanpy**. Set the grouping variable to 'DePass'. Rank genes with the 'wilcoxon' method to calculate log-fold change (logFC) values. 
