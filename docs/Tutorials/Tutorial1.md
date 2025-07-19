@@ -33,7 +33,7 @@ path = '../data/dataset_HumanTonsil'
 os.mkdir(path) if not os.path.exists(path) else print(f"The directory '{path}' already exists.\n")
 ```
 
-### Loading and Preprocessing
+### Loading and preprocessing
 
 Load the raw count data and perform preprocessing to ensure high-quality input for model. The preprocessing methods are detailed below:
 For transcriptomics, we filtered gene features to retain those detected in ≥1% of cells. Top 1,000 highly variable genes (HVGs) were selected via Seurat v3 dispersion-based method. Counts were normalized per cell (total scaling to 10^4), followed by log1p transformation and z-score standardization via scanpy package. For proteomics, protein expression matrices were normalized using centered log-ratio (CLR) transformation to address compositionality biases, followed by feature-wise z-score standardization.
@@ -107,7 +107,7 @@ adata.obsm['x2_enh'] = model.x2_enh
 
 After the model is trained, we use the integrated representation for cluster analysis. Here we provide three optional clustering tools, including **mclust**, **leiden**, and **kmeans**. We recommend using the **mclust** algorithm for clustering and specifying the number of target clusters. In this example, we set the number of clusters to 7 and use PCA for dimensionality reduction by setting `use_pca=True`.  The clustering results are stored in the `adata` object under the key `'DePass'`. 
 
-For visualization, we perform **spatial visualization of regions** using **matplotlib**, where colors correspond to the cluster assignments. 
+We perform **spatial visualization of regions** using **matplotlib**, where colors correspond to the cluster assignments. 
 
 
 
@@ -190,7 +190,7 @@ plot_modality_weights(
 
 
 
-### Data Enhancement Analysis
+### Data enhancement analysis
 
 
 Perform differential expression analysis using **scanpy**. Set the grouping variable to 'DePass'. Rank genes with the 'wilcoxon' method to calculate log-fold change (logFC) values. 
@@ -239,8 +239,8 @@ adata2_E.write(path+'/adata2_E.h5ad')
 ```
 
 
-### Comparison of Spatial Expression Patterns and LogFC for Markers
 
+### Comparison of spatial expression patterns and logFC for markers
 
 ```python
 from DePass.analyze_utils import plot_marker_comparison_with_logFC
@@ -329,8 +329,7 @@ adata2_E_noise = ad.AnnData(X=adata.obsm['x2_enh_noise'], obs=adata.obs[['DePass
 
 ### DePass for maskded data 
 
-Masked Data Generation details: Random masking was implemented through modality-specific protocols: For transcriptomic data, non-zero entries were randomly masked (mask ratio:) following high-variance gene (HVG) selection. Proteomic features were masked prior to centered log-ratio (CLR) normalization. 
-
+Random masking was implemented through modality-specific protocols: For transcriptomic data, non-zero entries were randomly masked (mask ratio: 0.16, a predefined ratio) following HVG selection. Proteomic features were masked prior to CLR normalization. 
 
 ```python
 from DePass.analyze_utils import Generate_masked_data
@@ -381,7 +380,7 @@ adata2_E_mask = ad.AnnData(X=adata.obsm['x2_enh_mask'], obs=adata.obs[['DePass']
     
 
 
-### Data Enhancement Analysis: Clustering
+### Data enhancement analysis: clustering
 
 
 ```python
@@ -505,8 +504,7 @@ adata2_R_mask = sc.read(path+'/adata2_R_mask.h5ad')
 adata2_E_mask = sc.read(path+'/adata2_E_mask.h5ad')
 ```
 
-### Data Enhancement Analysis: Marker LogFC and Expression Pattern
-
+### Data enhancement analysis: marker LogFC and expression pattern
 
 Perform differential expression analysis using **scanpy**. Set the grouping variable to 'DePass'. Rank genes with the 'wilcoxon' method to calculate log-fold change (logFC) values. 
 

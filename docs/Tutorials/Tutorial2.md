@@ -119,7 +119,7 @@ adata.obsm['x2_enh'] = model.x2_enh
 
 After the model is trained, we use the integrated representation for cluster analysis. Here we provide three optional clustering tools, including **mclust**, **leiden**, and **kmeans**. We recommend using the **mclust** algorithm for clustering and specifying the number of target clusters. In this example, we set the number of clusters to 3 and use PCA for dimensionality reduction by setting `use_pca=True`.  The clustering results are stored in the `adata` object under the key `'DePass'`. 
 
-For visualization, we perform **spatial visualization of regions** using **matplotlib**, where colors correspond to the cluster assignments. 
+We perform **spatial visualization of regions** using **matplotlib**, where colors correspond to the cluster assignments. 
 
 
 
@@ -172,8 +172,7 @@ plot_spatial(
     
 
 
-### Data Enhancement Analysis: Marker LogFC and Expression Pattern
-
+### Data enhancement analysis: marker LogFC and expression pattern
 
 Perform differential expression analysis using **scanpy**. Set the grouping variable to 'DePass'. Rank genes with the 'wilcoxon' method to calculate log-fold change (logFC) values. 
 
@@ -236,7 +235,6 @@ adata = sc.read(path+'/adata.h5ad')
 ```
 
 
-After obtaining logFC values from the differential analysis, use the `'visualize_marker_comparison'` function to Compare spatial expression patterns and logFC of markers.
 
 
 ```python
