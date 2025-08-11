@@ -3,18 +3,18 @@ site_name: DePass Documentation
 nav:
   - Home: index.md
   - Tutorials:
-    - "Tutorial 1: Spatial CITE-seq (Human tonsil)": Tutorials/Tutorial1.md
-    - "Tutorial 2: SPOTS (Mouse spleen)": Tutorials/Tutorial2.md
-    - "Tutorial 3: SAM (PD mouse A)": Tutorials/Tutorial3.md
-    - "Tutorial 4: SAM (PD mouse B)": Tutorials/Tutorial4.md
-    - "Tutorial 5: SAM (PD mouse C)": Tutorials/Tutorial5.md
-    - "Tutorial 6: MISAR-seq (Mouse brain)": Tutorials/Tutorial6.md
-    - "Tutorial 7: Spatial Stereo-CITE-seq (CRC)": Tutorials/Tutorial7.md
-    - "Tutorial 8: Spatial-Mux-seq (Mouse embryo)": Tutorials/Tutorial8.md
-    - "Tutorial 9: CITE-seq (GSE163120 KO4)": Tutorials/Tutorial9.md
-    - "Tutorial 10: 10x Multiome (PBMC3k)": Tutorials/Tutorial10.md
-    - "Tutorial 11: 10x Multiome (PBMC10k)": Tutorials/Tutorial11.md
-    - "Tutorial 12: DOGMA-seq": Tutorials/Tutorial12.md
-    - "Tutorial 13: TEA-seq": Tutorials/Tutorial13.md
+    - "Tutorial 1: Spatial CITE-seq (Human tonsil)": Tutorials/1.md
+    - "Tutorial 2: SPOTS (Mouse spleen)": Tutorials/2.md
+    - "Tutorial 3: Visium-MALDI (PD mouse A)": Tutorials/3.md
+    - "Tutorial 4: Visium-MALDI (PD mouse B)": Tutorials/4.md
+    - "Tutorial 5: Visium-MALDI (PD mouse C)": Tutorials/5.md
+    - "Tutorial 6: MISAR-seq (Mouse brain)": Tutorials/6.md
+    - "Tutorial 7: Spatial Stereo-CITE-seq (CRC)": Tutorials/7.md
+    - "Tutorial 8: Spatial-Mux-seq (Mouse embryo)": Tutorials/8.md
+    - "Tutorial 9: CITE-seq (GSE163120 KO4)": Tutorials/9.md
+    - "Tutorial 10: 10x Multiome (PBMC3k)": Tutorials/10.md
+    - "Tutorial 11: 10x Multiome (PBMC10k)": Tutorials/11.md
+    - "Tutorial 12: DOGMA-seq": Tutorials/12.md
+    - "Tutorial 13: TEA-seq": Tutorials/13.md
 
 theme: readthedocs
