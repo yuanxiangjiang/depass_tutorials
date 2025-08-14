@@ -3,14 +3,13 @@
 
 DePass is a dual-enhanced graph learning framework designed for integrated analysis of both single-cell and spatial paired multi-omics data. It flexibly supports diverse modality combinations.
 
-<p align="left">
-  <img src=image.png width="700"/>
-</p>
+![alt text](image.png)
 
+---
 
 ## DePass Installation
 
-It is preferred to create a new environment for DePass.
+#### It is preferred to create a new environment for DePass.
 
 ```bash
 # Create and activate a new conda environment
@@ -18,27 +17,35 @@ conda create -n DePass python==3.8.20
 conda activate DePass
 ```
 
-DePass is available on PyPI, and could be installed using:
+---
+
+#### Option A : Install DePass from PyPI
 
 ```bash
 pip install DePass
 ```
 
-Installation via Github is also provided:
+---
+
+#### Option B : Install DePass from GitHub
 
 ```bash
 git clone https://github.com/zhanglabNKU/DePass.git
 cd DePass
 pip install depass-0.0.20-py3-none-any.whl
 ```
+#### Additional Dependencies
 
-Additionally, because DePass leverages mclust for clustering, installing R, the rpy2 Python interface, and the mclust R package is recommended.
+Because DePass leverages `mclust` for clustering, installing R, the `rpy2` Python interface, and the `mclust` R package is recommended.
+
 ```bash
-conda install -c conda-forge r-base rpy2 
+conda install -c conda-forge r-base rpy2
 conda install conda-forge::r-mclust
 ```
 
-Install pytorch, pytorch geometric
+---
+
+#### Install PyTorch and PyTorch Geometric
 
 ```bash
 pip install torch==2.4.1
@@ -47,6 +54,7 @@ pip install torch_scatter torch_sparse torch_cluster torch_spline_conv -f https:
 ```
 
 ---
+
 
 ## Requirements
 
