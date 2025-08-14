@@ -1,11 +1,11 @@
 
-# DePass: A Dual-Enhanced Graph Learning Framework for Paired Data Integration in Single-Cell and Spatial Multi-Omics
+# DePass
 
-DePass is a dual-enhanced graph learning framework for paired data integration in both single-cell and spatial multi-omics. It is capable of flexibly processing diverse modality combinations. Unlike existing methods, DePass uniquely incorporates data augmentation in model training. This data enhancement strategy leverages neighborhood information aggregation: each cell's expression value is refined using its spatial adjacent neighbors and feature-similar neighbors. Crucially, a feedback mechanism further refines neighbor selection by using integrated cross-modal representations to improve the accuracy of feature similarity estimation. This feedback-driven enhancement achieves iterative optimization of data refinement and integration during model training, gradually reducing noise while enhancing the quality of multi-omics integration. In addition, DePass incorporates a subgraph-based learning strategy to achieve scalability across large-scale datasets. The comprehensive benchmarking across six modality types, eight tissue types, and ten experimental platforms confirmed DePass’s effectiveness. It consistently outperforms existing methods in clustering accuracy and biological spatial domain identification, highlighting its versatility and establishing it as a tool for robust multi-omics integration.
+DePass is a dual-enhanced graph learning framework designed for integrated analysis of both single-cell and spatial paired multi-omics data. It flexibly supports diverse modality combinations.
 
-
-![alt text](image.png)
-
+<p align="left">
+  <img src=image.png width="700"/>
+</p>
 
 
 ## DePass Installation
