@@ -32,7 +32,7 @@ pip install DePass
 ```bash
 git clone https://github.com/zhanglabNKU/DePass.git
 cd DePass
-pip install depass-0.0.20-py3-none-any.whl
+pip install depass-0.0.21-py3-none-any.whl
 ```
 #### Additional Dependencies
 
