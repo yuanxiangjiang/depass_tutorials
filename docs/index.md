@@ -3,7 +3,7 @@
 
 DePass is a dual-enhanced graph learning framework designed for integrated analysis of both single-cell and spatial paired multi-omics data. It flexibly supports diverse modality combinations.
 
-![alt text](image.png)
+![alt text](DePass.jpg)
 
 ---
 
